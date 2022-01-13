@@ -10,7 +10,7 @@ int main()
     awalnemen:
     string siap, ulangi, pil, lagi;
     cout << "==========================================" << endl;
-    cout << "        Masukan Nama Anda: ";
+    cout << "        Ja: ";
     cin >> siap;
     cout << "==========================================" << endl;
     cout << "             Apakah Kamu Siap" << endl;
@@ -76,6 +76,23 @@ int main()
         }
         else if(pil=="3")//Jafar
         {
+				cout << "========================================" << endl;
+				cout << Kamu pilih = GUNTING " << endl;
+				
+				if(com<= && com>=1{
+					cout << "Lawan pilih = GUNTING " << endl;
+					cout << "=====================================" <<endl;
+					cout << "   ==> SERI ! <==  " << endl;
+			        }
+                                else if(com<=6 && com>=4){
+                                    cout << "  Lawan pilih = BATU  " << endl;
+                                    cout << "==========================================" << endl;
+                                    cout << " ==> KAMU KALAH ! <==  " << endl;
+                                }
+                                else{
+                                    cout << "  Lawam pilih = KERTAS  " << endl;
+                                    cout << "==========================================" << endl;
+                                    cout << " ==> KAMU MENANG ! <== " << endl;
             
             
             

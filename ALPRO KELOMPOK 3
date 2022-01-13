@@ -33,7 +33,7 @@ int main()
         cout << "  Tulis Pilihanmu : "; cin >> pil; cout << endl;
 
         if (pil=="1")//Risa1
-        	{
+        {
 			cout << "==========================================" << end1;
 			cout << " Kamu pilih = BATU " << end1;
 	
@@ -51,34 +51,28 @@ int main()
 				cout << " Lawan pilih = GUNTING " << end1;
 				cout << "==========================================" << end1;
 				cout << " ==> KAMU MENANG ! <== " << end1;
-				}
-				
-	
-           
-           
-           
-           
-           
-           
-           
-           
+				}	   
         }
         else if(pil=="2")//Rusdi
         {
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
+                                cout << "==========================================" << endl;
+                                cout << "  Kamu pilih = KERTAS  " << endl;
+
+                                if(com<=3 && com>=1){
+                                    cout << "  Lawan pilih = KERTAS  " << endl;
+                                    cout << "==========================================" << endl;
+                                    cout << "    ==> SERI ! <==   " << endl;
+                                }
+                                else if(com<=6 && com>=4){
+                                    cout << "  Lawan pilih = GUNTING  " << endl;
+                                    cout << "==========================================" << endl;
+                                    cout << " ==> KAMU KALAH ! <==  " << endl;
+                                }
+                                else{
+                                    cout << "  Lawam pilih = BATU  " << endl;
+                                    cout << "==========================================" << endl;
+                                    cout << " ==> KAMU MENANG ! <== " << endl;
+                                }     
         }
         else if(pil=="3")//Jafar
         {

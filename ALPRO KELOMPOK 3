@@ -1,1 +1,138 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
+#include <time.h>
+using namespace std;
+int main()
+{
+    awalnemen:
+    string siap, ulangi, pil, lagi;
+    cout << "==========================================" << endl;
+    cout << "        Masukan Nama Anda: ";
+    cin >> siap;
+    cout << "==========================================" << endl;
+    cout << "             Apakah Kamu Siap" << endl;
+    cout << "   Untuk Bermain Batu Kertas Gunting ? " << endl;
+    cout << "==========================================" << endl;
+    cout << "                 [y/t] ? " ;
+    cin >> siap;
+    if(siap=="y"){
+        pertama:
+        srand(time(NULL));
+        int com = rand() % 10;
+		system("cls");
+        cout << "==========================================" << endl;
+        cout << "             Selamat Datang " << endl;
+        cout << "      Di Game Batu, Kertas, Gunting " << endl;
+        cout << "==========================================" << endl;
+        cout << " Pilihlah angka dari keempat pilihan ini : " << endl;
+        cout << endl;
+        cout << "    1. Batu\n    2. Kertas\n    3. Gunting\n\n    4. Keluar" << endl;
+        cout << "  Tulis Pilihanmu : "; cin >> pil; cout << endl;
 
+        if (pil=="1")//Risa1
+        {
+           
+           
+           
+           
+           
+           
+           
+           
+        }
+        else if(pil=="2")//Rusdi
+        {
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+        }
+        else if(pil=="3")//Jafar
+        {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        else if(pil=="4")//Risa2
+        {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        cout << "==========================================" << endl << endl;
+        cout << " Tekan ENTER ";
+        getch();
+        system("cls");
+
+        cout << "==========================================" << endl;
+        cout << "==========================================" << endl;
+        cout << "           Main Lagi [y/t] ? ";
+        cin >> lagi;
+        if (lagi=="y"){
+            system("cls");
+            goto pertama;
+        }
+        else if (lagi=="t"){
+            system("cls");
+            goto exit;
+            getch();
+        }
+    }
+    else if(siap=="t"){
+        keluar:
+        system("cls");
+        cout << "\n\n\n\n" << endl;
+        cout << "============================================================================" << endl;
+        cout << "                  Kamu Telah Keluar Dari Permainan" << endl;
+        cout << "============================================================================" << endl;
+        cout << "                             Tekan ENTER ";
+        getch();
+        return 0;
+    }
+    else {
+        cout << "============================================================================" << endl;
+        cout << "                      **** Inputan Salah ! ****" << endl;
+        cout << "                              Ulangi ?" << endl;
+        cout << "============================================================================" << endl;
+        cout << "                                 y ? ";
+        cin >> ulangi;
+        if(ulangi=="y"){
+            system("cls");
+            goto awalnemen;
+        }
+        else {
+            goto keluar;
+        }
+    }
+}

@@ -5,146 +5,125 @@
 #include <conio.h>
 #include <time.h>
 using namespace std;
+
 int main()
 {
     awalnemen:
-    string siap, ulangi, pil, lagi;
-    cout << "==========================================" << endl;
-    cout << "        Ja: ";
-    cin >> siap;
-    cout << "==========================================" << endl;
-    cout << "             Apakah Kamu Siap" << endl;
-    cout << "   Untuk Bermain Batu Kertas Gunting ? " << endl;
-    cout << "==========================================" << endl;
-    cout << "                 [y/t] ? " ;
+    string siap, ulangi, pil, nama, lagi;
+    cout << "\n  ============================================" << endl;
+    cout << "       Memulai Permainan Batu kertas Gunting   ";
+    cout << "\n  ============================================"<< endl;
+    cout << "        Masukan Nama Anda: "; cin >> nama; cout << endl;
+    cout << "  ==========================================" << endl;
+    cout << "              Apakah Kamu Siap" << endl;
+    cout << "      Untuk Bermain Batu Kertas Gunting ? " << endl;
+    cout << "  ==========================================" << endl;
+    cout << "                   [y/t] ? " ;
     cin >> siap;
     if(siap=="y"){
     	pertama:
         srand(time(NULL));
         int com = rand() % 10;
 		system("cls");
-        cout << "==========================================" << endl;
-        cout << "             Selamat Datang " << endl;
-        cout << "      Di Game Batu, Kertas, Gunting " << endl;
-        cout << "==========================================" << endl;
-        cout << " Pilihlah angka dari keempat pilihan ini : " << endl;
+        cout << "  ==========================================" << endl;
+        cout << "              Selamat Datang " << endl;
+        cout << "       Di Game Batu, Kertas, Gunting " << endl;
+        cout << "  ==========================================" << endl;
+        cout << "  Pilihlah angka dari keempat pilihan ini : " << endl;
         cout << endl;
-        cout << "    1. Batu\n    2. Kertas\n    3. Gunting\n\n    4. Keluar" << endl;
-        cout << "  Tulis Pilihanmu : "; cin >> pil; cout << endl;
+        cout << "    [1]. Batu\n    [2]. Kertas\n    [3]. Gunting\n\n    [4]. Keluar" << endl;
+	cout << "  ==========================================" << endl;
+        cout << "  Masukkan Pilihanmu : "; cin >> pil; cout << endl;
 
-        if (pil=="1")//Risa1
+        if (pil=="1")
         {
-			cout << "==========================================" << end1;
-			cout << " Kamu pilih = BATU " << end1;
+		cout << "  ==========================================" << endl;
+		cout << "  " << nama<< " Memilih = BATU " << endl;
 	
-			if(com<=3 && com>=1){
-				cout << " Lawan pilih = BATU " << end1;
-				cout << "==========================================" << end1;
-				cout << " ==> SERI ! <== " << end1;
-				}
-			else if(com<=6 && com>=4){
-				cout << " Lawan pilih = KERTAS " << end1;
-				cout << "==========================================" << end1;
-				cout << " ==> KAMU KALAH ! <== " << end1;
-				}
-			else{
-				cout << " Lawan pilih = GUNTING " << end1;
-				cout << "==========================================" << end1;
-				cout << " ==> KAMU MENANG ! <== " << end1;
+		if(com<=3 && com>=1){
+			cout << "  Komputer Memilih = BATU " << endl;
+			cout << "  ==========================================" << endl;
+			cout << "  ==> SERI ! <== " << endl;
+			}
+		else if(com<=6 && com>=4){
+			cout << "  Komputer Memilih = KERTAS " << endl;
+			cout << "  ==========================================" << endl;
+			cout << "  ==> KAMU KALAH ! <== " << endl;
+			}
+		else{
+			cout << "  Komputer Memilih = GUNTING " << endl;
+			cout << "  ==========================================" << endl;
+			cout << "  ==> KAMU MENANG ! <== " << endl;
 				}	   
         }
-        else if(pil=="2")//Rusdi
+        else if(pil=="2")
         {
-                                cout << "==========================================" << endl;
-                                cout << "  Kamu pilih = KERTAS  " << endl;
+                 cout << "  ==========================================" << endl;
+                 cout << "  " << nama<< " Memilih = KERTAS  " << endl;
 
-                                if(com<=3 && com>=1){
-                                    cout << "  Lawan pilih = KERTAS  " << endl;
-                                    cout << "==========================================" << endl;
-                                    cout << "    ==> SERI ! <==   " << endl;
-                                }
-                                else if(com<=6 && com>=4){
-                                    cout << "  Lawan pilih = GUNTING  " << endl;
-                                    cout << "==========================================" << endl;
-                                    cout << " ==> KAMU KALAH ! <==  " << endl;
-                                }
-                                else{
-                                    cout << "  Lawam pilih = BATU  " << endl;
-                                    cout << "==========================================" << endl;
-                                    cout << " ==> KAMU MENANG ! <== " << endl;
-                                }     
+                 if(com<=3 && com>=1){
+                 	cout << "  Komputer Memilih = KERTAS  " << endl;
+                        cout << "  ==========================================" << endl;
+                        cout << "   ==> SERI ! <==   " << endl;
+                         }
+                 else if(com<=6 && com>=4){
+                        cout << "  Komputer Memilih = GUNTING  " << endl;
+                        cout << "  ==========================================" << endl;
+                        cout << "  ==> KAMU KALAH ! <==  " << endl;
+                        }
+                 else{
+                        cout << "  Komputer Memilih = BATU  " << endl;
+                        cout << "  ==========================================" << endl;
+                        cout << "  ==> KAMU MENANG ! <== " << endl;
+                        }     
         }
-        else if(pil=="3")//Jafar
+        else if(pil=="3")
         {
-				cout << "========================================" << endl;
-				cout << Kamu pilih = GUNTING " << endl;
+		cout << "  ========================================" << endl;
+		cout << "  " << nama<< " Memilih = GUNTING " << endl;
 				
-				if(com<= && com>=1{
-					cout << "Lawan pilih = GUNTING " << endl;
-					cout << "=====================================" <<endl;
-					cout << "   ==> SERI ! <==  " << endl;
+			if(com<=3 && com>=1){
+				cout << "  Komputer Memilih = GUNTING " << endl;
+				cout << "  =====================================" <<endl;
+				cout << "  ==> SERI ! <==  " << endl;
 			        }
-                                else if(com<=6 && com>=4){
-                                    cout << "  Lawan pilih = BATU  " << endl;
-                                    cout << "==========================================" << endl;
-                                    cout << " ==> KAMU KALAH ! <==  " << endl;
+                         else if(com<=6 && com>=4){
+                                cout << "  Komputer Memilih = BATU  " << endl;
+                                cout << "  ==========================================" << endl;
+                                cout << "  ==> KAMU KALAH ! <==  " << endl;
                                 }
-                                else{
-                                    cout << "  Lawam pilih = KERTAS  " << endl;
-                                    cout << "==========================================" << endl;
-                                    cout << " ==> KAMU MENANG ! <== " << endl;
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+                         else{
+                                cout << "  Komputer Memilih = KERTAS  " << endl;
+                                cout << "  ==========================================" << endl;
+                                cout << "  ==> KAMU MENANG ! <== " << endl;
+				}
         }
-        else if(pil=="4")//Risa2
+        else if(pil=="4")
         {
-			exit:
-			system("cls");
-			cout << "\n Terimakasih, Sudah Bermain :) " << end1;
-			cout << " Bermain Lagi Yah " << end1;
-			getch();
-			return 0;
-		}
-		else
-		{
-			cout << " ==========================================" << end1 << end1;
-			cout << " Inputan Salah ! Silahkan Ulangi Kembali " << end1;
-			cout << " ==> Tekan ENTER <==" << end1;
-			getch();
-			system("cls");
-			goto pertama;
-			
-            
-            
-            
-            
-            
-            
-            
-            
-            
+		exit:
+		system("cls");
+		cout << "\n  Terimakasih, Sudah Bermain :) " << endl;
+			cout << "  Bermain Lagi Yah " << endl;
+		getch();
+		return 0;
+	}
+	else
+	{
+		cout << "  ==========================================" << endl << endl;
+		cout << "  Inputan Salah ! Silahkan Ulangi Kembali " << endl;
+		cout << "  ==> Tekan ENTER <==" << endl;
+		getch();
+		system("cls");
+		goto pertama;
         }
-        cout << "==========================================" << endl << endl;
-        cout << " Tekan ENTER ";
+        cout << "  ==========================================" << endl << endl;
+        cout << "  ==> Tekan ENTER ";
         getch();
         system("cls");
 
-        cout << "==========================================" << endl;
-        cout << "==========================================" << endl;
-        cout << "           Main Lagi [y/t] ? ";
+        cout << "  ==========================================" << endl;
+        cout << "  ==========================================" << endl;
+        cout << "             Main Lagi [y/t] ? ";
         cin >> lagi;
         if (lagi=="y"){
             system("cls");
@@ -160,19 +139,19 @@ int main()
         keluar:
         system("cls");
         cout << "\n\n\n\n" << endl;
-        cout << "============================================================================" << endl;
-        cout << "                  Kamu Telah Keluar Dari Permainan" << endl;
-        cout << "============================================================================" << endl;
-        cout << "                             Tekan ENTER ";
+        cout << "  ============================================================================" << endl;
+        cout << "                   Kamu Telah Keluar Dari Permainan" << endl;
+        cout << "  ============================================================================" << endl;
+        cout << "                              Tekan ENTER ";
         getch();
         return 0;
     }
     else {
-        cout << "============================================================================" << endl;
-        cout << "                      **** Inputan Salah ! ****" << endl;
-        cout << "                              Ulangi ?" << endl;
-        cout << "============================================================================" << endl;
-        cout << "                                 y ? ";
+        cout << "  ============================================================================" << endl;
+        cout << "                       **** Inputan Salah ! ****" << endl;
+        cout << "                               Ulangi ?" << endl;
+        cout << "  ============================================================================" << endl;
+        cout << "                                  y ? ";
         cin >> ulangi;
         if(ulangi=="y"){
             system("cls");

@@ -19,7 +19,7 @@ int main()
     cout << "                 [y/t] ? " ;
     cin >> siap;
     if(siap=="y"){
-        pertama:
+    	pertama:
         srand(time(NULL));
         int com = rand() % 10;
 		system("cls");
@@ -33,7 +33,27 @@ int main()
         cout << "  Tulis Pilihanmu : "; cin >> pil; cout << endl;
 
         if (pil=="1")//Risa1
-        {
+        	{
+			cout << "==========================================" << end1;
+			cout << " Kamu pilih = BATU " << end1;
+	
+			if(com<=3 && com>=1){
+				cout << " Lawan pilih = BATU " << end1;
+				cout << "==========================================" << end1;
+				cout << " ==> SERI ! <== " << end1;
+				}
+			else if(com<=6 && com>=4){
+				cout << " Lawan pilih = KERTAS " << end1;
+				cout << "==========================================" << end1;
+				cout << " ==> KAMU KALAH ! <== " << end1;
+				}
+			else{
+				cout << " Lawan pilih = GUNTING " << end1;
+				cout << "==========================================" << end1;
+				cout << " ==> KAMU MENANG ! <== " << end1;
+				}
+				
+	
            
            
            
@@ -80,6 +100,22 @@ int main()
         }
         else if(pil=="4")//Risa2
         {
+			exit:
+			system("cls");
+			cout << "\n Terimakasih, Sudah Bermain :) " << end1;
+			cout << " Bermain Lagi Yah " << end1;
+			getch();
+			return 0;
+		}
+		else
+		{
+			cout << " ==========================================" << end1 << end1;
+			cout << " Inputan Salah ! Silahkan Ulangi Kembali " << end1;
+			cout << " ==> Tekan ENTER <==" << end1;
+			getch();
+			system("cls");
+			goto pertama;
+			
             
             
             

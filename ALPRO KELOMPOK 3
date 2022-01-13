@@ -8,19 +8,22 @@ using namespace std;
 
 int main()
 {
-    awalnemen:
-    string siap, ulangi, pil, nama, lagi;
-    cout << "\n  ============================================" << endl;
-    cout << "       Memulai Permainan Batu kertas Gunting   ";
-    cout << "\n  ============================================"<< endl;
-    cout << "        Masukan Nama Anda: "; cin >> nama; cout << endl;
-    cout << "  ==========================================" << endl;
-    cout << "              Apakah Kamu Siap" << endl;
-    cout << "      Untuk Bermain Batu Kertas Gunting ? " << endl;
-    cout << "  ==========================================" << endl;
-    cout << "                   [y/t] ? " ;
-    cin >> siap;
-    if(siap=="y"){
+	system("color 3F");
+	awalnemen:
+	string siap, ulangi, pil, nama, lagi;
+	cout << "\n  ============================================" << endl;
+	cout << "       Memulai Permainan Batu kertas Gunting   ";
+	cout << "\n  ============================================"<< endl;
+	cout << "        Masukan Nama Anda: "; cin >> nama; cout << endl;
+	cout << "  ==========================================" << endl;
+	cout << "              Apakah Kamu Siap" << endl;
+	cout << "      Untuk Bermain Batu Kertas Gunting ? " << endl;
+	cout << "  ==========================================" << endl;
+	cout << "                   [y/t] ? " ;
+	
+	cin >> siap;
+	
+	if(siap=="y"){
     	pertama:
         srand(time(NULL));
         int com = rand() % 10;
@@ -54,7 +57,8 @@ int main()
 			cout << "  Komputer Memilih = GUNTING " << endl;
 			cout << "  ==========================================" << endl;
 			cout << "  ==> KAMU MENANG ! <== " << endl;
-				}	   
+			}
+			
         }
         else if(pil=="2")
         {
@@ -75,7 +79,8 @@ int main()
                         cout << "  Komputer Memilih = BATU  " << endl;
                         cout << "  ==========================================" << endl;
                         cout << "  ==> KAMU MENANG ! <== " << endl;
-                        }     
+                        }    
+			
         }
         else if(pil=="3")
         {
@@ -97,26 +102,32 @@ int main()
                                 cout << "  ==========================================" << endl;
                                 cout << "  ==> KAMU MENANG ! <== " << endl;
 				}
+				
         }
         else if(pil=="4")
         {
 		exit:
 		system("cls");
-		cout << "\n  Terimakasih, Sudah Bermain :) " << endl;
-			cout << "  Bermain Lagi Yah " << endl;
+		cout << "\n\n\n\n  =====================================================================" << endl;
+		cout << "                    Terimakasih Sudah Bermain ! " << endl;
+		cout << "                        Bermain Lagi Yah :)" << endl;
+		cout << "  =====================================================================" << endl;
+		cout << "                      Tekan ENTER Untuk Keluar";
 		getch();
 		return 0;
 	}
 	else
 	{
-		cout << "  ==========================================" << endl << endl;
+		cout << "  ==========================================" << endl;
 		cout << "  Inputan Salah ! Silahkan Ulangi Kembali " << endl;
 		cout << "  ==> Tekan ENTER <==" << endl;
 		getch();
 		system("cls");
 		goto pertama;
+		
         }
-        cout << "  ==========================================" << endl << endl;
+	
+        cout << "  ==========================================" << endl;
         cout << "  ==> Tekan ENTER ";
         getch();
         system("cls");
@@ -124,6 +135,7 @@ int main()
         cout << "  ==========================================" << endl;
         cout << "  ==========================================" << endl;
         cout << "             Main Lagi [y/t] ? ";
+	
         cin >> lagi;
         if (lagi=="y"){
             system("cls");
